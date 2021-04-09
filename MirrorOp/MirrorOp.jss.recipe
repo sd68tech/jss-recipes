@@ -23,14 +23,14 @@
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>CONTUS MirrorFly is customizable communication APIs and SDKs for businesses to integrate or develop collaboration platforms with real-time chat, voice, video calling and video conferencing features on their existing web and mobile...</string>
+		<string>Mirroring software application for wePresent systems.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>%NAME%.png</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.kmeyer68.pkg.MirrorOp</string>
+	<string>com.github.sd68tech.pkg.MirrorOp</string>
 	<key>Process</key>
 	<array>
 		<dict>
