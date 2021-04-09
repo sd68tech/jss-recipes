@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of vCastSender.</string>
 	<key>Identifier</key>
-	<string>com.github.kmeyer68.download.vCastSender</string>
+	<string>com.github.sd68tech.download.vCastSender</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
