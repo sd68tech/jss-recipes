@@ -18,7 +18,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.kmeyer68.pkg.vCastSender</string>
+	<string>com.github.sd68tech.pkg.vCastSender</string>
 	<key>Process</key>
 	<array>
 		<dict>
