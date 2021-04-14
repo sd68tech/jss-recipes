@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of vCastSender and creates a package.</string>
 	<key>Identifier</key>
-	<string>com.github.kmeyer68.pkg.vCastSender</string>
+	<string>com.github.sd68tech.pkg.vCastSender</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.kmeyer68.download.vCastSender</string>
+	<string>com.github.sd68tech.download.vCastSender</string>
 	<key>Process</key>
 	<array>
 		<dict>
