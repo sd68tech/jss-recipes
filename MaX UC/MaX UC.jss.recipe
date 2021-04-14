@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of MaX UC and imports it into your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.jss-recipes.jss.MaXUC</string>
+	<string>com.github.sd68tech.jss.MaXUC</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
