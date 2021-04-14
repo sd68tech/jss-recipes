@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of vCastSender and uploads the package to your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.jss-recipes.jss-upload.vCastSender</string>
+	<string>com.github.sd68tech.jss-upload.vCastSender</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
