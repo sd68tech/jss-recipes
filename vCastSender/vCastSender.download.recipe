@@ -25,7 +25,7 @@
 				<key>result_output_varname</key>
 				<string>match</string>
 				<key>url</key>
-				<string>view-source:https://www.viewsonic.com/in/products/viewboard/IFP7550-3</string>
+				<string>https://www.viewsonic.com/in/products/viewboard/IFP7550-3</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLTextSearcher</string>
