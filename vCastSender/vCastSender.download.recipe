@@ -20,14 +20,27 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>filename</key>
-				<string>%NAME%.pkg</string>
+				<key>re_pattern</key>
+				<string>(vCastSender_Mac_v\.\S*\.zip)</string>
+				<key>result_output_varname</key>
+				<string>match</string>
 				<key>url</key>
-				<string>http://osx.skokie68.org/repo/vCastSender.pkg</string>
+				<string>view-source:https://www.viewsonic.com/in/products/viewboard/IFP7550-3</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLTextSearcher</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>filename</key>
+				<string>%NAME%.dmg</string>
+				<key>url</key>
+				<string>https://www.viewsonicglobal.com/public/products_download/software/cd/%match%</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
-		</dict>
+		</dict>	
 		<dict>
 			<key>Processor</key>
 			<string>EndOfCheckPhase</string>
