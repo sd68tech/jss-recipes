@@ -21,7 +21,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>appcast_url</key>
-				<string>http://www.freemacsoft.net/appcleaner/Updates.xml</string>
+				<string>https://www.freemacsoft.net/appcleaner/Updates.xml</string>
 			</dict>
 			<key>Processor</key>
 			<string>SparkleUpdateInfoProvider</string>
