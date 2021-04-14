@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of MirrorOp and uploads the package to your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.jss-recipes.jss-upload.MirrorOp</string>
+	<string>com.github.sd68tech.jss-upload.MirrorOp</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
