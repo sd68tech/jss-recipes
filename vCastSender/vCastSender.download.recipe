@@ -75,7 +75,7 @@
 				</array>
 				<key>input_path</key>
 				<!-- <string>%pathname%</string> -->
-				<string>%RECIPE_CACHE_DIR%/%NAME%/*.dmg/*.pkg</string>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/vCastSender-200829.dmg/*.pkg</string>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
