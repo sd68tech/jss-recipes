@@ -53,7 +53,7 @@
 				<key>archive_path</key>
 				<string>%pathname%</string>
 				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack</string>
+				<string>%RECIPE_CACHE_DIR%/unpack-zip</string>
 				<key>purge_destination</key>
 				<true/>
 			</dict>
@@ -64,9 +64,24 @@
 			<key>Arguments</key>
 			<dict>
 				<key>pattern</key>
-				<string>%RECIPE_CACHE_DIR%/unpack/*.dmg</string>
+				<string>%RECIPE_CACHE_DIR%/unpack-zip/*.dmg</string>
+			</dict>
+		</dict>
+		
+		<dict>
+			<key>Processor</key>
+			<string>FlatPkgUnpacker</string>
+			<key>Arguments</key>
+			<dict>
+				<key>flat_pkg_path</key>
+				<string>%found_filename%/*.pkg</string>
+				<key>destination_path</key>
+				<string>%RECIPE_CACHE_DIR%/unpack-pkg</string>
+				<key>purge_destination</key>
+				<true/>
 			</dict>
 		</dict>		
+		
 		<dict>
 			<key>Arguments</key>
 			<dict>
@@ -77,7 +92,7 @@
 					<string>Apple Root CA</string>
 				</array>
 				<key>input_path</key>
-				<string>%found_filename%/*.pkg</string>
+				<string>%RECIPE_CACHE_DIR%/unpack-pkg</string>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
