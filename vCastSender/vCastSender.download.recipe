@@ -45,9 +45,6 @@
 			<key>Processor</key>
 			<string>EndOfCheckPhase</string>
 		</dict>
-		
-		
-		
 		<dict>
 			<key>Processor</key>
 			<string>Unarchiver</string>
@@ -56,14 +53,20 @@
 				<key>archive_path</key>
 				<string>%pathname%</string>
 				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%</string>
+				<string>%RECIPE_CACHE_DIR%/unpack</string>
 				<key>purge_destination</key>
 				<true/>
 			</dict>
 		</dict>
-		
-		
-		
+		<dict>
+			<key>Processor</key>
+			<string>FileFinder</string>
+			<key>Arguments</key>
+			<dict>
+				<key>pattern</key>
+				<string>%RECIPE_CACHE_DIR%/unpack/*.dmg</string>
+			</dict>
+		</dict>		
 		<dict>
 			<key>Arguments</key>
 			<dict>
@@ -74,8 +77,7 @@
 					<string>Apple Root CA</string>
 				</array>
 				<key>input_path</key>
-				<!-- <string>%pathname%</string> -->
-				<string>%RECIPE_CACHE_DIR%/%NAME%/vCastSender-200829.dmg/*.pkg</string>
+				<string>%found_filename%/*.pkg</string>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
