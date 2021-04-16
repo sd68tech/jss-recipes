@@ -100,7 +100,7 @@
 					<string>Apple Root CA</string>
 				</array>
 				<key>input_path</key>
-				<string>%pathname%/UPDD_06_00_616.pkg</string>
+				<string>%found_filename%/*.pkg</string>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
@@ -109,9 +109,9 @@
 			<key>Arguments</key>
 			<dict>
 				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack</string>
+				<string>%RECIPE_CACHE_DIR%/unpack-pkg</string>
 				<key>flat_pkg_path</key>
-				<string>%pathname%/UPDD_06_00_616.pkg</string>
+				<string>%found_filename%/*.pkg</string>
 				<key>purge_destination</key>
 				<true/>
 			</dict>
@@ -122,9 +122,9 @@
 			<key>Arguments</key>
 			<dict>
 				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/payload</string>
+				<string>%RECIPE_CACHE_DIR%/payload-pkg</string>
 				<key>pkg_payload_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack/UPDD.pkg/Payload</string>
+				<string>%RECIPE_CACHE_DIR%/unpack-pkg/UPDD.pkg/Payload</string>
 				<key>purge_destination</key>
 				<true/>
 			</dict>
@@ -135,7 +135,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/payload/Library/Application Support/UPDD/UPDD Commander.app/Contents/Info.plist</string>
+				<string>%RECIPE_CACHE_DIR%/payload-pkg/Library/Application Support/UPDD/UPDD Commander.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
