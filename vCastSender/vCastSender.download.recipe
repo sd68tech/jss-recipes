@@ -104,7 +104,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack</string>
+				<string>%RECIPE_CACHE_DIR%/unpack-pkg</string>
 				<key>flat_pkg_path</key>
 				<string>%found_filename%/*.pkg</string>
 				<key>purge_destination</key>
@@ -117,9 +117,9 @@
 			<key>Arguments</key>
 			<dict>
 				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/payload</string>
+				<string>%RECIPE_CACHE_DIR%/payload-pkg</string>
 				<key>pkg_payload_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack/vCastSender.pkg/Payload</string>
+				<string>%RECIPE_CACHE_DIR%/unpack-pkg/vCastSender.pkg/Payload</string>
 				<key>purge_destination</key>
 				<true/>
 			</dict>
@@ -130,7 +130,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/payload/Applications/vCastSender.app/Contents/Info.plist</string>
+				<string>%RECIPE_CACHE_DIR%/payload-pkg/Applications/vCastSender.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
