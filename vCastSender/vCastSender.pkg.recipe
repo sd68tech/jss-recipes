@@ -22,6 +22,12 @@
 		<dict>
 			<key>Processor</key>
 			<string>AppPkgCreator</string>
+			
+			<dict>
+				<key>app_path</key>
+				<string>%RECIPE_CACHE_DIR%/payload/Applications/*.app</string>				
+			</dict>
+			
 		</dict>
 	</array>
 </dict>
