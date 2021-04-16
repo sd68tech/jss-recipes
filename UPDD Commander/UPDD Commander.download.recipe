@@ -17,7 +17,7 @@
 	<string>1.0.0</string>
 	<key>Process</key>
 	<array>
-		<dict>
+		<!-- <dict>
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
@@ -31,7 +31,65 @@
 		<dict>
 			<key>Processor</key>
 			<string>EndOfCheckPhase</string>
+		</dict> -->
+		
+		
+		<!-- https://www.viewsonicglobal.com/public/products_download/software/ifp/ifp50/Mac_UPDD_06_00_616_for_IFP50%20Gen2_Gen3_IFP70.zip -->
+		
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>re_pattern</key>
+				<string>(Mac_UPDD_\S*\.zip)</string>
+				<key>result_output_varname</key>
+				<string>match</string>
+				<key>url</key>
+				<string>https://www.viewsonic.com/in/products/viewboard/IFP7550-3</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLTextSearcher</string>
 		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>filename</key>
+				<string>%NAME%.zip</string>
+				<key>url</key>
+				<string>https://www.viewsonicglobal.com/public/products_download/software/ifp/ifp50/%match%</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
+		</dict>	
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>Unarchiver</string>
+			<key>Arguments</key>
+			<dict>
+				<key>archive_path</key>
+				<string>%pathname%</string>
+				<key>destination_path</key>
+				<string>%RECIPE_CACHE_DIR%/unpack-zip</string>
+				<key>purge_destination</key>
+				<true/>
+			</dict>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>FileFinder</string>
+			<key>Arguments</key>
+			<dict>
+				<key>pattern</key>
+				<string>%RECIPE_CACHE_DIR%/unpack-zip/*.dmg</string>
+			</dict>
+		</dict>
+		
+		
+		
+		
 		<dict>
 			<key>Arguments</key>
 			<dict>
