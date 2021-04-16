@@ -68,7 +68,7 @@
 			</dict>
 		</dict>
 		
-		<dict>
+		<!-- <dict>
 			<key>Processor</key>
 			<string>FlatPkgUnpacker</string>
 			<key>Arguments</key>
@@ -80,7 +80,7 @@
 				<key>purge_destination</key>
 				<true/>
 			</dict>
-		</dict>
+		</dict> -->
 		
 		<dict>
 			<key>Arguments</key>
@@ -92,7 +92,7 @@
 					<string>Apple Root CA</string>
 				</array>
 				<key>input_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack-pkg/*.app</string>
+				<string>%found_filename%/*.pkg</string>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
