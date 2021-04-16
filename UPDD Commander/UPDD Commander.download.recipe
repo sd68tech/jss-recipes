@@ -34,7 +34,7 @@
 		</dict> -->
 		
 		
-		<!-- https://www.viewsonicglobal.com/public/products_download/software/ifp/ifp50/Mac_UPDD_06_00_616_for_IFP50%20Gen2_Gen3_IFP70.zip -->
+		<!-- https://www.viewsonicglobal.com/public/products_download/software/ifp/ifp50/Mac_UPDD_06_00_616_for_IFP50 Gen2_Gen3_IFP70.zip -->
 		
 		<dict>
 			<key>Arguments</key>
@@ -49,13 +49,33 @@
 			<key>Processor</key>
 			<string>URLTextSearcher</string>
 		</dict>
+		
+		
+		
+		<dict>
+		    <key>Arguments</key>
+		    <dict>
+			<key>find</key>
+			<string> </string>
+			<key>input_string</key>
+			<string>%match%</string>
+			<key>replace</key>
+			<string>%20</string>
+		    </dict>
+		    <key>Processor</key>
+		    <string>com.github.homebysix.FindAndReplace/FindAndReplace</string>
+		</dict>		
+		
+		
+		
+		
 		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
 				<string>%NAME%.zip</string>
 				<key>url</key>
-				<string>urlencode('https://www.viewsonicglobal.com/public/products_download/software/ifp/ifp50/%match%')</string>
+				<string>https://www.viewsonicglobal.com/public/products_download/software/ifp/ifp50/%output_string%</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
