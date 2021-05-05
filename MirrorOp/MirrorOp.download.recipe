@@ -18,7 +18,15 @@
 	<key>Process</key>
 	<array>
 		
-
+        <dict>
+            <key>Processor</key>
+            <string>PathDeleter</string>
+            <key>Arguments</key>
+            <dict>
+                <key>path_list</key>
+                <string>%RECIPE_CACHE_DIR%</string>
+            </dict>
+        </dict>
 
 		<dict>
 			<key>Arguments</key>
