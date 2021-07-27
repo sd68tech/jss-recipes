@@ -70,7 +70,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>pattern</key>
-				<string>%RECIPE_CACHE_DIR%/unpack-zip/*.dmg</string>
+				<string>%RECIPE_CACHE_DIR%/unpack-zip/**/*.dmg</string>
 			</dict>
 		</dict>
 		
