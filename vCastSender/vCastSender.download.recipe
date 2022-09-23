@@ -17,12 +17,12 @@
 	<string>1.0.0</string>
 	<key>Process</key>
 	<array>
-		<!--
+		
 		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>re_pattern</key>
-				<string>(vCastSender_Mac_v\.\S*\.zip)</string>
+				<string>(Mac_v\.\S*\.zip)</string>
 				<key>result_output_varname</key>
 				<string>match</string>
 				<key>url</key>
@@ -31,18 +31,20 @@
 			<key>Processor</key>
 			<string>URLTextSearcher</string>
 		</dict>
-		-->
+		
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<!-- 
+				 
 				<key>filename</key>
 				<string>%NAME%.zip</string>
 				<key>url</key>
-				<string>https://www.viewsonicglobal.com/public/products_download/software/cd/%match%</string>
-				-->
+				<string>https://www.viewsonicglobal.com/public/products_download/software/ifp/%match%</string>
+				
+				<!--
 				<key>url</key>
 				<string>https://www.viewsonicglobal.com/public/products_download/software/cd/vCastSender_Mac.zip</string>
+				-->
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
